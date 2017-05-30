@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Teste</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root><br>
+<script type="text/javascript" src="inline.382fa214a2630b8374e0.bundle.js"></script><script type="text/javascript" src="polyfills.682313b6b06f69a5089e.bundle.js"></script><script type="text/javascript" src="vendor.765bef7fc0b73d2d51d7.bundle.js"></script><script type="text/javascript" src="main.f600cdf6186600affaaa.bundle.js"></script></body>
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  }
+</script>
+</html>
