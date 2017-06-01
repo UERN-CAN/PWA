@@ -1,12 +1,13 @@
 module.exports = {
   staticFileGlobs: [
-    'dist/**.html',
-    'dist/**.js',
-    'dist/**.css',
-    'dist/assets/images/*',
-    'dist/assets/icons/*'
+    'index.html'
   ],
-  root: 'dist',
-  stripPrefix: 'dist/',
-  navigateFallback: '/index.html'
+  root: 'src',
+  stripPrefix: '/src',
+  navigateFallback: '/index.html',
+  runtimeCaching: [{
+    urlPattern: /uern-can\.github\.io/,
+    handler: 'networkFirst'
+  }]
+
 };
