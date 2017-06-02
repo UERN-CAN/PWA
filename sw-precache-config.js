@@ -1,9 +1,11 @@
 module.exports = {
   staticFileGlobs: [
-    'index.html'
+    'dist/index.html',
+    'dist/**.js',
+    'dist/**.css'
   ],
-  root: 'src',
-  stripPrefix: '/src',
+  root: 'dist/',
+  stripPrefix: 'dist',
   navigateFallback: '/index.html',
   runtimeCaching: [{
     urlPattern: /uern-can\.github\.io/,
