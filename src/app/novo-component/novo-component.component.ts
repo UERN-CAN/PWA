@@ -16,4 +16,8 @@ export class NovoComponentComponent implements OnInit {
     console.log("enviar click");
   }
 
+  buttonClick() {
+    alert("Botão clicado!!!");
+  }
+
 }

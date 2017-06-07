@@ -8,7 +8,7 @@ module.exports = {
   stripPrefix: 'dist',
   navigateFallback: '/index.html',
   runtimeCaching: [{
-    urlPattern: /uern-can\.github\.io/,
+    urlPattern: /uern-can\.github\.io\\PWA/,
     handler: 'networkFirst'
   }]
 
