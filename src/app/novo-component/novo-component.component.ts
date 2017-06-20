@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NovoComponentComponent implements OnInit {
 
-  constructor() { }
+  imagem: string;
+
+  constructor() {
+    this.imagem = "assets/Images/logo_uern.jpg";
+  }
 
   ngOnInit() {
   }
@@ -18,6 +22,10 @@ export class NovoComponentComponent implements OnInit {
 
   buttonClick() {
     alert("Botão clicado!!!");
+  }
+
+  logoClick() {
+    console.log(this.imagem);
   }
 
 }

@@ -3,18 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>Teste</title>
-  <base href="/">
+  <base href="https://uern-can.github.io/PWA/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
 <link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
 <body>
-  <app-root>Loading...</app-root><br>
+  <app-root>
+    <img src="assets/Images/loading.gif"/><br>
+    Loading...
+  </app-root><br>
 
   <script>
     if('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
           // Registration was successful
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
         }).catch(function(err) {
@@ -24,5 +28,5 @@
       });
     }
   </script>
-<script type="text/javascript" src="inline.041a968fd89530a2edb1.bundle.js"></script><script type="text/javascript" src="polyfills.682313b6b06f69a5089e.bundle.js"></script><script type="text/javascript" src="vendor.765bef7fc0b73d2d51d7.bundle.js"></script><script type="text/javascript" src="main.62a18a16cd5b1c08a478.bundle.js"></script></body>
+<script type="text/javascript" src="inline.d3bb251507a488524395.bundle.js"></script><script type="text/javascript" src="polyfills.682313b6b06f69a5089e.bundle.js"></script><script type="text/javascript" src="vendor.765bef7fc0b73d2d51d7.bundle.js"></script><script type="text/javascript" src="main.3007dde785be860fbbc8.bundle.js"></script></body>
 </html>

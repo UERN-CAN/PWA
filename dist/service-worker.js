@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/index.html","7c25476b10cad1aeea1cee486bad48f4"],["/inline.041a968fd89530a2edb1.bundle.js","f800877f7363eb2120b4447058a4262a"],["/main.62a18a16cd5b1c08a478.bundle.js","57363cf3a63b6483c0f74175b8ba79e7"],["/polyfills.682313b6b06f69a5089e.bundle.js","dd4b68fbecceff972372ae8bdcce7e9b"],["/styles.d41d8cd98f00b204e980.bundle.css","d41d8cd98f00b204e9800998ecf8427e"],["/vendor.765bef7fc0b73d2d51d7.bundle.js","e51409f82219060ac8cc56c8352f376d"]];
+var precacheConfig = [];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/uern-can\.github\.io\\PWA/, toolbox.networkFirst, {});
+toolbox.router.get(/uern-can\.github\.io/, toolbox.networkFirst, {});
 
 
 

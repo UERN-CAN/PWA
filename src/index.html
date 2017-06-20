@@ -7,14 +7,18 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <app-root>Loading...</app-root><br>
+  <app-root>
+    <img src="assets/Images/loading.gif"/><br>
+    Loading...
+  </app-root><br>
 
   <script>
     if('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
           // Registration was successful
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
         }).catch(function(err) {
