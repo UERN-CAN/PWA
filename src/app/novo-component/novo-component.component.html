@@ -1,7 +1,21 @@
 <p>
   serviceworker, precache!
 </p>
-<button type="button" name="button" (click)="buttonClick()">Click</button>
-<br>
-<br>
-<img [src]="imagem" alt="Descrição" (click)="logoClick()"/>
+
+<div class="row">
+  <div class="col-sm-12 col-md-12">
+    <div class="thumbnail">
+      <img [src]="imagem" class="img-responsive" alt="Descrição" (click)="logoClick()"/>
+      <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Cras dolor lorem, gravida vitae euismod ut, vehicula id odio.
+                Nunc porttitor dolor vel sodales efficitur. Suspendisse aliquam
+                 pulvinar velit. Nam aliquam blandit diam a tempus. Donec at
+                  libero sodales, consequat arcu nec, interdum massa.
+                  Pellentesque vel imperdiet orci. In et nisl.</p>
+                  <button type="button" class="btn btn-success" name="button" (click)="buttonClick()">Click</button>
+      </div>
+    </div>
+  </div>
+</div>

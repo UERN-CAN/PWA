@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NovoComponentComponent implements OnInit {
 
   imagem: string;
+  valorQuery: string;
 
   constructor() {
     this.imagem = "assets/Images/logo_uern.jpg";
